@@ -1,0 +1,35 @@
+site_name: Web Старт!
+site_url: https://ekidscoding.github.io/html-css-start/
+
+theme:
+  favicon: assets/favicon.ico
+  logo: assets/logo.png
+  name: material
+  language: uk
+  font:
+    text: Source Sans 3
+    code: Source Code Pro
+  features:
+    - content.code.copy
+
+markdown_extensions:
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - md_in_html
+  - pymdownx.blocks.caption
+
+plugins:
+  - glightbox
+
+extra_javascript:
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
